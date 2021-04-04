@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>SIGN UP | KARGOS</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <main>
+    <div class="auth-wrapper">
+      <div class="auth-content">
+        <div class="auth-head">
+          <img class="img-fluid" src="./assets/images/logo-1x.png" alt="Kargos Logo" />
+        </div>
+        <form class="signup-form pt-2">
+          <div class="auth-body">
+            <div class="form-group">
+              <div class="select-wrap">
+                <select class="form-control select-box" name="question1" required>
+                  <option value="What Profile do you most identify with?">What Profile do you most identify with?
+                  </option>
+                  <option value="How much cities are most visited with shipments?">How much cities are most visited with
+                    shipments?</option>
+                  <option value="What ration of shipments success?">What ration of shipments success?</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Full name" name="fullname" required />
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email Address" name="email" required />
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="Password" name="password" required />
+            </div>
+            <div class="form-row mb-3">
+              <div class="col-4 col-sm-3">
+                <div class="select_wrap">
+                  <ul class="default_option form-control">
+                    <input id="countryCode" type="hidden" name="country" value="91" />
+                    <li class="option ind">
+                      <div class="option ind">
+                        <div class="icon"></div>
+                        <p>+91</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="select_ul">
+                    <li>
+                      <div class="option india">
+                        <div class="icon"></div>
+                        <p>+91</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="option united-states">
+                        <div class="icon"></div>
+                        <p>+1</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="option united-kingdom">
+                        <div class="icon"></div>
+                        <p>+44</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="option australia">
+                        <div class="icon"></div>
+                        <p>+61</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="option russia">
+                        <div class="icon"></div>
+                        <p>+7</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="option germany">
+                        <div class="icon"></div>
+                        <p>+49</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="option kuwait">
+                        <div class="icon"></div>
+                        <p>+965</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Mobile number" name="mobile" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="select-wrap">
+                <select class="form-control select-box" name="question2" required>
+                  <option value="How many shipments did you do the last year?">How many shipments did you do the last
+                    year?</option>
+                  <option value="How much load of your shipments have last year?">How much load of your shipments have
+                    last year?</option>
+                  <option value="What is the return shipments route in this select?">What is the return shipments route
+                    in this
+                    select?</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="auth-foot">
+            <div class="row">
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-auth">Register</button>
+              </div>
+            </div>
+            <p class="text-center">
+              Already have an account?
+              <a href="./login.html" class="auth-link">Login</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $(".default_option").click(function () {
+        $(this).parent().toggleClass("active");
+      });
+
+      $(".select_ul li").click(function () {
+        var currentele = $(this).html();
+        var currentCode = $(this).find("p").html().substr(1);
+        $("#countryCode").val(currentCode);
+        $(".default_option li").html(currentele);
+        $(this).parents(".select_wrap").removeClass("active");
+      });
+
+      $(document).on("click", function (event) {
+        if (!$(event.target).closest(".select_wrap").length) {
+          $(".select_ul").parent().removeClass("active");
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
