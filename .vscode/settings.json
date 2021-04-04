@@ -1,0 +1,31 @@
+{
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveSassCompile.settings.generateMap": false,
+    "liveServer.settings.port": 5501,
+    "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "liveSassCompile.settings.formats": [
+      {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "~/../css/"
+      }
+    ],
+    "liveSassCompile.settings.autoprefix": [
+      "> 1%",
+      "last 3 version",
+      "Chrome >= 35",
+      "Firefox >= 38",
+      "Edge >= 10",
+      "Explorer >= 10",
+      "ie >= 10",
+      "iOS >= 8",
+      "Safari >= 8",
+      "Android 2.3",
+      "Android >= 4",
+      "Opera >= 12"
+    ]  
+  }
+  

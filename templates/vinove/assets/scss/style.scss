@@ -1,0 +1,224 @@
+body {
+    font-family: 'Signika', sans-serif;
+    position: relative;
+}
+
+.vinove-header {
+    background-color: #000000b3;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+
+    .navbar-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .brand-logo {
+            img {
+                width: 150px;
+            }
+        }
+
+        .navbar-menu {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin-bottom: 0;
+            padding-left: 0;
+
+            .item-nav {
+                margin-right: 30px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                .link-nav {
+                    color: #fff;
+                    font-weight: 600;
+                    text-decoration: none;
+                    transition: 0.4s ease-in-out;
+
+                    &:hover {
+                        color: #6899c7;
+                    }
+                }
+
+
+            }
+        }
+
+        .aside-open {
+            box-shadow: none;
+        }
+    }
+}
+
+.content-area {
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+
+.vinove-sidebar {
+    background-color: #0258A9;
+    width: 0px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    transition: all 1s ease-in-out 0s;
+    box-shadow: 0px 0px 18px 4px rgba(37, 38, 39, 0.7);
+
+    .sidebar-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.95rem 1.5rem;
+        background-color: #00000099;
+
+        .aside-close {
+            box-shadow: none;
+            margin-left: 120px;
+        }
+    }
+
+    .sidebar-menu {
+        list-style: none;
+        margin-bottom: 0;
+        padding-left: 0;
+
+        .item-aside {
+            border-bottom: 1px solid #2B71BF;
+            padding: 0.75rem 1.5rem;
+
+            .link-aside {
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                transition: 0.4s ease-in-out;
+                white-space: nowrap;
+
+                &:hover {
+                    color: #6899c7;
+                }
+            }
+
+
+        }
+    }
+}
+
+.banner-section {
+    background-image: url('./../images/banner-home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 130px 0 60px;
+
+    @media(min-width: 768px) {
+        padding: 150px 0 80px;
+    }
+
+    h1,
+    h2,
+    h5 {
+        color: #FFF;
+        margin-bottom: 0;
+        transition: 0.2s ease-in;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 44px;
+
+        @media(min-width: 576px) {
+            font-size: 80px;
+        }
+
+        @media(min-width: 992px) {
+            font-size: 120px;
+        }
+    }
+
+    h2 {
+        font-weight: 400;
+        font-size: 22px;
+
+        @media(min-width: 576px) {
+            font-size: 50px;
+        }
+
+        @media(min-width: 992px) {
+            font-size: 80px;
+        }
+    }
+
+    h5 {
+        font-weight: 300;
+        font-size: 16px;
+
+        @media(min-width: 576px) {
+            font-size: 26px;
+        }
+
+        @media(min-width: 992px) {
+            font-size: 34px;
+        }
+    }
+
+}
+
+.core-values {
+    background-color: #EBEBEB;
+    padding: 60px 0;
+
+    @media(min-width: 992px) {
+        padding: 80px 0;
+    }
+
+    .value-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        height: 400px;
+        padding: 20px 60px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+
+        @media(max-width: 991px) {
+            max-width: 300px;
+            margin: auto;
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            padding: 20px;
+        }
+
+        @media(min-width: 1200px) {
+            padding: 20px 90px;
+        }
+
+        .card-item {
+            h4 {
+                color: #0358A9;
+                font-weight: 300;
+                margin-top: 20px;
+            }
+
+            p {
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.vinove-footer {
+    background-color: #0358A9;
+    padding: 20px 0;
+
+    p {
+        color: #fff;
+        font-weight: 300;
+    }
+}
